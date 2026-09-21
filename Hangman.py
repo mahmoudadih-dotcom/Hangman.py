@@ -1,7 +1,7 @@
 #استدعاء المكاتب 
 import random
 #اخيار الاعشوائي 
-ch_random=random.choice(['man','women','child'])
+ch_random=random.choice(['man','woman','child'])
 #المتغيرات
 token=6
 guessing_basket=[]
@@ -60,7 +60,7 @@ print(" ".join(b_ch_random))
 print(HANGMANPICS[0])
 #لوب 
 while '_' in b_ch_random and token>0:
-    guess=input("what is your guess ? ")
+    guess=input("what is your guess ? ").lower()
 
 #IF داخل لوب تحقق من توكن 
     if guess in guessing_basket:
